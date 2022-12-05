@@ -1,8 +1,8 @@
 import requests #HTTP通信用のPythonライブラリ
 
 def savefunc(link_str, file_str, num):
-    # 1から100までの画像を取得する場合は1,101で指定（pythonの範囲指定は以上未満の為）
-    for i in range(1,int(num)):
+    # 1から100までの画像を取得する場合はプログラム部分で1,101で指定（pythonの範囲指定は以上未満の為）
+    for i in range(1,int(num)+1):
         print(i)
         url = link_str.format(str(i)) #取得する画像URL https://www.hoge.jp/fuga{}.jpg のように記述
         
